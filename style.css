@@ -1,0 +1,352 @@
+@charset "UTF-8";
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,900&display=swap');
+
+* {
+
+}
+
+body {
+    font-size: 16px;
+}
+
+/* CSS para dispositivos de tela média */
+
+@media screen and (max-width:768px) {
+    body {
+        font-size: 14px;
+      }
+
+      .menu {
+        justify-content: flex-start;
+      }
+      
+      .menu-toggle {
+        display: none;
+      }
+      
+      .menu-list {
+        position: static;
+        display: flex;
+        justify-content: flex-end;
+        transform: translateY(0%);
+        background-color: transparent;
+      }
+      
+      .menu-list li {
+        margin-left: 20px;
+      }
+    }
+
+/* CSS para dispositivos de tela pequena */
+
+@media screen and (max-width: 480px) {
+    body {
+      font-size: 12px;
+    }
+}
+
+
+
+h1 {
+    text-align: left;
+    color: #FEFEFE;
+    font-family: 'Roboto', sans-serif;
+}
+
+h2 {
+    text-align: center;
+    color: #FEFEFE;
+    font-family: 'Roboto', sans-serif;
+}
+
+#sac {
+    font-size: 16px;
+}
+
+h3{
+    text-align: center;
+    text-decoration: none;
+}
+
+p{
+    text-align: center;
+    display: block;
+    max-width: 900px;
+    color: #9f0d0d;
+    padding: 0px 150px;
+}
+
+p#viagem2{
+    text-align: center;
+    color: black;
+    
+}
+
+h3#SAN {
+    font-size: small;
+    text-align: center;
+}
+
+h3#viagem{
+    text-align: center;
+}
+
+body {
+    background-color: #11ACE2;
+    font-family: Rubik, sans-serif
+}
+
+nav {
+    background-color: #333;
+    color: #fff;
+    font-size: 18px;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 10px;
+    background-color: #fff;
+}
+
+li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+nav ul {
+    display: none;
+}
+
+a:hover{
+    text-decoration: underline #11ACE2 2px;
+}
+
+
+
+img#g8 {
+    display: block;
+    margin: auto;
+    padding-top: 20px;
+}
+
+
+.elemento {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.container {
+    display: flexbox;
+    position: relative;
+}
+
+.container img {}
+
+.formulario {
+    position: absolute;
+    top: 20%;
+    left: 0%;
+    text-align: center;
+    padding: 10px;
+}
+
+
+form {
+    /* Apenas para centralizar o form na página */
+    margin: 0px 150px;
+    width: 400px;
+    /* Para ver as bordas do formulário */
+    padding: 1em;
+    border: 1px solid #CCC;
+    border-radius: 1em;
+    background-color: #FEFEFE;
+}
+
+form div+div {
+    margin-top: 1em;
+}
+
+label {
+    /*Para ter certeza que todas as labels tem o mesmo tamanho e estão propriamente alinhadas */
+    display: inline-block;
+    width: 65px;
+    text-align: center;
+}
+
+.Buscar {
+    background-color: #EB8316;
+    padding: 20px 150px;
+    border-radius: 10px;
+    border: none;
+}
+
+.Buscar:hover {
+    cursor: pointer;
+    background-color: #EC6A1A;
+    transition: 0.5s;
+    border-radius: 2px;
+}
+
+#passagens {
+    text-align: center;
+    color: #FEFEFE;
+    margin-bottom: 16px;
+    display: block;
+    font-size: 1.4em;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-family: 'Roboto', sans-serif;;
+}
+
+.destinosedit {
+    display: flex;
+    /* coloca as imagens uma ao lado da outra */
+    justify-content: space-around;
+    padding-bottom: 13px;
+}
+
+#destinos {
+    height: 200px;
+    width: 300px;
+}
+
+.destinosedit:hover {}
+
+#destinos:hover {
+    border-radius: 10px;
+    -webkit-filter: grayscale(50%);
+    cursor: pointer;
+}
+
+.info-flex-text {
+    margin-bottom: 2rem;
+}
+
+
+.info-conteudo {
+    padding: 1rem !important;
+    background: white;
+    display: flex;
+}
+
+.info-conteudo img {
+    filter: brightness(0) saturate(100%) invert(27%) sepia(69%) saturate(1677%) hue-rotate(202deg) brightness(100%) contrast(88%);
+    margin: auto 1rem;
+    display: block;
+}
+
+.info-conteudo h3 {
+    color: rgb(89, 89, 89);
+    font-size: 14px ;
+    margin: auto;
+}
+
+.info-flex-text {
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 15px;
+    background:  white;
+    border-radius: 8px;
+    display: flex;
+}
+
+.wts-widget {
+    box-shadow: 0 1px 3px rgba(0,0,0,.1), 0 1px 2px rgba(0,0,0,.2);
+    border-radius: 30px;
+    display: inline-block;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    padding: 8px 13px 9px;
+    font-size: 15px;
+    text-decoration: none;
+    background-color: #22c15e;
+    color: #fff;
+    z-index: 1;
+    cursor: pointer;
+}
+
+
+
+.mapa-site {
+    background-color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    padding: 60px 0px 25px 0px;
+    border-radius: 10px;
+}
+
+element.style {
+}
+.mapa-site .mapaItem {
+    text-align: left;
+    margin: 0px 10px 0px 10px;
+}
+folha de estilos de agente de usuário
+div {
+    display: block;
+}
+.mapa-site .mapa {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    color: #2d5a5a;
+}
+
+.mapa-site .mapaItem {
+    text-align: left;
+    margin: 0px 10px 0px 10px;
+}
+
+.mapa-site .mapaItem a {
+    text-decoration: none;
+    color: #2d5a5a;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.mapa-site .mapaLabel h5 {
+    font-size: 15px;
+    font-weight: bold;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+table{
+    border-collapse: separate;
+}
+
+.desktop .vpi-footer {
+    text-align: left;
+    margin-top: 0px;
+    margin-bottom: 0px; 
+} 
+
+.vpi-footer {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.vpi-app {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.1;
+}
+
+
+
