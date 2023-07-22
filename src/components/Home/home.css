@@ -1,0 +1,65 @@
+body {
+    background-image: url(https://marcopolog8.com/userfiles/paginas/mg8-original80-envio-azul-1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.home {
+    text-align: center;
+    padding: 20vw;
+  }
+  
+  h2 {
+    font-size: 24px;
+    color: #E0F4FB;
+  }
+  
+  .formulario {
+    display: inline-block;
+    text-align: left;
+    padding: 2rem;
+    border-radius: 8px;
+    background: rgba(0, 0, 0, 0.5);
+  }
+  
+  .formulario div {
+    margin-bottom: 1rem;
+  }
+  
+  label {
+    font-size: 16px;
+    margin-right: 10px;
+  }
+  
+  input[type='text'],
+  input[type='date'] {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 200px;
+  }
+  
+  input[type='submit'] {
+    padding: 8px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #0088ff;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .Search {
+    background-color: #0088ff;
+  }
+  
+  /* Optional: If you want to align the radio buttons horizontally */
+  .formulario div:last-child {
+    display: flex;
+  }
+  
+  .formulario div:last-child label {
+    margin-right: 20px;
+  }
+  
