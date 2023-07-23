@@ -1,0 +1,33 @@
+
+
+.destinations-h2 {
+  text-align: center;
+  color: #187BD1;
+  font-family: 'Roboto', sans-serif;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+  
+.grid-container-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.grid-container img {
+  width: 15rem;
+  height: 15rem;
+  border-radius: 10px;
+}
+
+@media (min-width: 800px) {
+  .grid-container {
+    grid-template-columns: repeat(3, minmax(200px, 1fr));
+  }
+}
+
