@@ -9,42 +9,47 @@ function Destinations(): JSX.Element {
           <div className="grid-container">
             <img
               className="destination"
-              src="https://site-de-passagens.vercel.app/img/Sampa.jpg"
+              src="src/assets/img/destinations/SP.webp"
               alt="Sao Paulo"
             />
             <img
               className="destination"
-              src="https://site-de-passagens.vercel.app/img/salvador.jpg"
-              alt="Salvador"
-            />
-            <img
-              className="destination"
-              src="https://site-de-passagens.vercel.app/img/brasilia.jpg"
-              alt="Brasilia"
-            />
-            <img
-              className="destination"
-              src="https://site-de-passagens.vercel.app/img/natal.jpg"
+              src="src/assets/img/destinations/natal.webp"
               alt="Natal"
             />
             <img
               className="destination"
-              src="https://site-de-passagens.vercel.app/img/bh.jpg"
-              alt="Belo Horizonte"
+              src="src/assets/img/destinations/salvador.webp"
+              alt="Salvador"
             />
             <img
               className="destination"
-              src="https://site-de-passagens.vercel.app/img/recife.jpg"
+              src="src/assets/img/destinations/rio-de-janeiro.webp"
+              alt="Rio de Janeiro"
+            />
+            <img
+              className="destination"
+              src="src/assets/img/destinations/maceio.webp"
+              alt="Maceio"
+            />
+            <img
+              className="destination"
+              src="src/assets/img/destinations/campos-jordao.webp"
+              alt="Campos do jordao"
+            />
+            <img
+              className="destination"
+              src="src/assets/img/destinations/recife.webp"
               alt="Recife"
             />
             <img
               className="destination"
-              src="https://site-de-passagens.vercel.app/img/portoAlegre.jpg"
+              src="src/assets/img/destinations/porto-alegre.webp"
               alt="Porto Alegre"
             />
             <img
               className="destination"
-              src="https://site-de-passagens.vercel.app/img/fortaleza.jpg"
+              src="src/assets/img/destinations/fortaleza.webp"
               alt="Fortaleza"
             />
           </div>
