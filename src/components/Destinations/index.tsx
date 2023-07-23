@@ -4,7 +4,10 @@ function Destinations(): JSX.Element {
   return (
     <div>
       <section id="destinations" className="destinations">
-        <h2 className="destinations-h2">Passagens de ônibus mais buscadas</h2>
+        <div className="header-container">
+          <h2 className="destinations-h2">Most searched bus tickets</h2>
+          <button>see more</button>
+        </div>
         <div className="grid-container-wrapper">
           <div className="grid-container">
             <img
