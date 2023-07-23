@@ -1,0 +1,44 @@
+
+.contact {
+  padding: 20px;
+  background-color: #f9f9f9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact h2 {
+  color: #187BD1;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.contact p {
+  color: #555;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+
+.contact-logos {
+  display: flex;
+  align-items: center;
+}
+
+.contact-logos a {
+  margin-right: 10px;
+  text-decoration: none;
+  color: #000;
+}
+
+/* Estilos para o ícone do LinkedIn */
+.contact-logos a .linkedin-icon {
+  color: #0A66C2;
+}
+
+/* Estilos para o ícone do GitHub */
+.contact-logos a .github-icon {
+  color: #000;
+}
+
+/* Efeito de hover nos ícones */
