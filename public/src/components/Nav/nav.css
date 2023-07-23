@@ -1,0 +1,53 @@
+.header-content{
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    top: 0;
+    background-color: #11ACE2;
+    width: 100vw;
+    justify-content: space-around;
+}
+
+.nav-info {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.nav-info span {
+    margin: 2vw;
+}
+
+.nav-info button {
+    background-color: #FF0303;
+    border-radius: 10px
+}
+
+.navbar {
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 3.5rem;
+    left: 0;
+}
+
+.menu-toogle {
+    display: none;
+}
+
+.menu-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+}
+
+.menu-list li {
+    padding: 1.2rem;
+}
