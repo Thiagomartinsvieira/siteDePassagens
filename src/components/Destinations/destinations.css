@@ -7,6 +7,26 @@
   margin-top: 5rem;
   margin-bottom: 5rem;
 }
+
+.header-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-container button {
+  transition: all .1s ease;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  padding: 5px 15px;
+  font-weight: 700;
+  color: #fff;
+  background-color: #11ACE2;
+  cursor: pointer;
+  margin-left: 1.3rem;
+}
   
 .grid-container-wrapper {
   display: flex;
