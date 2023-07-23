@@ -20,8 +20,15 @@
 }
 
 .nav-info button {
+    border-radius: 10px;
+    border: 1px solid transparent;
+    padding: 0.4em 1em;
+    font-size: 1em;
+    font-weight: 500;
+    font-family: inherit;
     background-color: #FF0303;
-    border-radius: 10px
+    cursor: pointer;
+    transition: border-color 0.25s;
 }
 
 .navbar {
