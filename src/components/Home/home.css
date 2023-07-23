@@ -1,15 +1,11 @@
-body {
+  .home {
     background-image: url(https://marcopolog8.com/userfiles/paginas/mg8-original80-envio-azul-1.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
-}
-
-.home {
     text-align: center;
     padding: 20vw;
-  }
-  
+}
   h2 {
     font-size: 24px;
     color: #E0F4FB;
