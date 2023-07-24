@@ -1,4 +1,3 @@
-import React from 'react';
 import './destinations.css';
 
 function Destinations(): JSX.Element {
