@@ -1,5 +1,4 @@
 
-
 .destinations-h2 {
   text-align: center;
   color: #187BD1;
@@ -43,9 +42,32 @@
   width: 15rem;
   height: 15rem;
   border-radius: 10px;
+  cursor: pointer;
 }
 
-@media (min-width: 800px) {
+.destination-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.destination-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  padding: 8px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.destination-wrapper:hover .destination-overlay {
+  opacity: 1;
+}
+
+
+@media (min-width: 768px) {
   .grid-container {
     grid-template-columns: repeat(3, minmax(200px, 1fr));
   }
