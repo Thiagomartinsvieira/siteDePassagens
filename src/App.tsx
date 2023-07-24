@@ -5,6 +5,7 @@ import Home from './components/Home';
 import Destinations from './components/Destinations';
 import Benefits from './components/Benefits';
 import Contact from './components/Contact';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Destinations />
         <Benefits />
         <Contact />
+        <Footer />
       </BrowserRouter>
     </div>
   );
