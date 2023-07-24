@@ -1,29 +1,68 @@
+import { FaFacebook, FaInstagram, FaYoutube } from 'react-icons/fa';
 import './footer.css';
 
 function Footer(): JSX.Element {
   return (
     <div>
-      <footer id="footercintent">
-        <div className="container px-5">
-          <div className="row justify-content-between">
-            <div className="footer-column col-12 col-md-auto mb-3 mb-md-0 p-auto p-md-0">
-              <a href="https://www.nspenha.com.br/home" className="logo">
-                <img
-                  src="https://www.nspenha.com.br/on/demandware.static/-/Sites/default/dw311ea751/Institucionais/logo-penha.png"
-                  alt="Penha"
-                  className="img-logo-footer"
-                ></img>
-              </a>
-              <p className="footer-text-small pr-3">
-                R. Jackson Figueiredo, 120
-                <br />
-                Parolin - Curitiba / PR
-                <br />
-                CEP - 81030-050
-              </p>
-            </div>
+      <footer>
+        <div className="footer-content">
+          <div className="footer-section">
+            <h3>Institucional</h3>
+            <ul>
+              <li>Nossa história</li>
+              <li>História da frota</li>
+              <li>Notícias</li>
+            </ul>
+          </div>
+
+          <div className="footer-section">
+            <h3>Passagens de Ônibus</h3>
+            <ul>
+              <li>Miniaturas</li>
+              <li>Passagens de ônibus</li>
+              <li>Conheça nossa frota</li>
+            </ul>
+          </div>
+
+          <div className="footer-section">
+            <h3>Formas de Pagamento</h3>
+            <ul>
+              <img
+                src="https://www.viacaoouroeprata.com.br/images/bandeiras_cartoeS_com_fundo.png"
+                alt=""
+              />
+            </ul>
           </div>
         </div>
+
+        <div className="social-media">
+          <a href="#">
+            <FaFacebook size={30} color="#1877F2" />
+          </a>
+          <a href="#">
+            <FaInstagram size={30} color="#C13584" />
+          </a>
+          <a href="#">
+            <FaYoutube size={30} color="#FF0000" />
+          </a>
+        </div>
+        <h3 className="footer-app">BAIXE NOSSO APP</h3>
+        <div className="footer-app-img">
+          <img
+            src="https://www.viacaocatedral.com.br/_next/static/media/storeGoogle.adf83fe7.svg"
+            alt=""
+          />
+          <img
+            src="https://www.viacaocatedral.com.br/_next/static/media/storeApple.ea26aaf2.svg"
+            alt=""
+          />
+        </div>
+        <hr />
+        <br />
+        <p className="footer-text">
+          © 2023 - AUTO VIEIRA - Empresa de Transportes fictícia - Desenvolvido
+          por Thiago Martins
+        </p>
       </footer>
     </div>
   );
