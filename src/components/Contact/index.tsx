@@ -6,6 +6,7 @@ function Contact(): JSX.Element {
     <div>
       <section id="contact" className="contact">
         <h2>Auto viação vieira na midia</h2>
+          
         <p>Se voce gostou do projeto e deseja conhecer outros</p>
         <div className="contact-logos">
           <a href="">
