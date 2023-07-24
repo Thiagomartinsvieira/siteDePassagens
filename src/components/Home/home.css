@@ -1,5 +1,5 @@
   .home {
-    background-image: url(https://marcopolog8.com/userfiles/paginas/mg8-original80-envio-azul-1.jpg);
+    background-image: url('src/assets/img/home/capa.webp');
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
