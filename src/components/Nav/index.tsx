@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import './nav.css';
+import { FaBars } from 'react-icons/fa';
 
 function Nav(): JSX.Element {
   const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
@@ -15,20 +16,24 @@ function Nav(): JSX.Element {
   return (
     <div className="nav">
       <div className="header-content">
-        <h1>Auto Vieira</h1>
+        <div className="title-and-menu">
+          <h1>Auto Vieira</h1>
+          <button
+            className={`menu-toggle ${isMenuOpen ? 'open' : ''}`}
+            onClick={handleMenuToggle}
+            type="button"
+          >
+            <FaBars />
+          </button>
+        </div>
         <div className="nav-info">
           <span>0800 123 1234</span>
-          <button>Central de ajuda</button>
+          <button className="help">Central de ajuda</button>
         </div>
       </div>
 
-      <nav className="navbar">
-        <button
-          className={`menu-toogle ${isMenuOpen ? 'open' : ''}`}
-          onClick={handleMenuToggle}
-          type="button"
-        ></button>
-        <ul className={`menu-list ${isMenuOpen ? 'open' : ''}`}>
+      <nav className={`navbar ${isMenuOpen ? 'open' : ''}`}>
+        <ul className="menu-list">
           <li>
             <a href="#" onClick={handleMenuLinkClick}>
               Home
