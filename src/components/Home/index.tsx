@@ -1,7 +1,14 @@
+import React, { useState } from 'react';
 import './home.css';
 import { FaLocationArrow, FaSearchLocation } from 'react-icons/fa';
 
 function Home(): JSX.Element {
+  const [tripType, setTripType] = useState('roundTrip');
+
+  const handleTripTypeChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setTripType(event.target.value);
+  };
+
   return (
     <div>
       <section id="home" className="home">
@@ -33,22 +40,44 @@ function Home(): JSX.Element {
 
             <div>
               <label>
-                <input type="radio" name="tripType" value="oneWay" />
-                One Way
-              </label>
-              <label>
-                <input type="radio" name="tripType" value="roundTrip" />
+                <input
+                  type="radio"
+                  name="tripType"
+                  value="roundTrip"
+                  checked={tripType === 'roundTrip'}
+                  onChange={handleTripTypeChange}
+                />
                 Round Trip
               </label>
+              <label>
+                <input
+                  type="radio"
+                  name="tripType"
+                  value="oneWay"
+                  checked={tripType === 'oneWay'}
+                  onChange={handleTripTypeChange}
+                />
+                One Way
+              </label>
             </div>
 
-            <div>
-              <label htmlFor="departureDate">Departure Date</label>
-              <input type="date" name="departureDate" id="departureDate" />
+            {tripType === 'roundTrip' && (
+              <div className="dateFields">
+                <label htmlFor="departureDate">Departure Date</label>
+                <input type="date" name="departureDate" id="departureDate" />
 
-              <label htmlFor="returnDate">Return Date</label>
-              <input type="date" name="returnDate" id="returnDate" />
-            </div>
+                <label htmlFor="returnDate">Return Date</label>
+                <input type="date" name="returnDate" id="returnDate" />
+              </div>
+            )}
+
+            {tripType === 'oneWay' && (
+              <div className="dateFields">
+                <label htmlFor="departureDate">Departure Date</label>
+                <input type="date" name="departureDate" id="departureDate" />
+              </div>
+            )}
+
             <div>
               <label htmlFor="search">Search</label>
               <input className="Search" type="submit" value="🔍 Search" />
