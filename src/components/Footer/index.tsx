@@ -28,8 +28,8 @@ function Footer(): JSX.Element {
             <h3>Formas de Pagamento</h3>
             <ul>
               <img
-                src="https://www.viacaoouroeprata.com.br/images/bandeiras_cartoeS_com_fundo.png"
-                alt=""
+                src="src\assets\img\footer\bandeiras.webp"
+                alt="formas de pagamento"
               />
             </ul>
           </div>
@@ -49,12 +49,12 @@ function Footer(): JSX.Element {
         <h3 className="footer-app">BAIXE NOSSO APP</h3>
         <div className="footer-app-img">
           <img
-            src="https://www.viacaocatedral.com.br/_next/static/media/storeGoogle.adf83fe7.svg"
-            alt=""
+            src="src\assets\img\footer\play-store.svg"
+            alt="Google Play Store"
           />
           <img
-            src="https://www.viacaocatedral.com.br/_next/static/media/storeApple.ea26aaf2.svg"
-            alt=""
+            src="src\assets\img\footer\store-apple.svg"
+            alt="Apple Store Apps"
           />
         </div>
         <hr />
