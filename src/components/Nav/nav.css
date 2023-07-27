@@ -13,7 +13,7 @@
   position: fixed;
   top: 0;
   background-color: #11ACE2;
-  width: 100vw;
+  width: 100%;
   justify-content: space-around;
   padding: 1rem;
   align-items: center;
@@ -97,7 +97,7 @@
 @media (max-width: 768px) {
 
   .navbar.open {
-    transform: translateY(16%);
+    transform: translateY(10%);
     transition: transform 0.3s ease;
   }
 
