@@ -7,6 +7,7 @@ function Nav(): JSX.Element {
 
   const handleMenuToggle = () => {
     setIsMenuOpen(!isMenuOpen);
+    document.body.classList.toggle('menu-open'); // Add this line
   };
 
   const handleMenuLinkClick = () => {

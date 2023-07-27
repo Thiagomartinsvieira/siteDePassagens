@@ -63,7 +63,11 @@
 }
 
 .menu-toggle {
-  display: none;
+  display: none; 
+}
+
+.menu-toggle:focus {
+  outline: none; 
 }
 
 .menu-list {
@@ -91,6 +95,13 @@
 }
 
 @media (max-width: 768px) {
+
+  .navbar.open {
+    transform: translateY(16%);
+    transition: transform 0.3s ease;
+  }
+
+
   .nav-info {
     margin-right: 20px;
   }
