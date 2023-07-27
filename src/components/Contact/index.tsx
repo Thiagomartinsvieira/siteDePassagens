@@ -1,5 +1,6 @@
 import './contact.css';
 import { FiGithub, FiLinkedin } from 'react-icons/fi';
+import { SiVercel } from 'react-icons/si';
 
 function Contact(): JSX.Element {
   return (
@@ -18,6 +19,9 @@ function Contact(): JSX.Element {
           </a>
           <a href="https://github.com/Thiagomartinsvieira" target="_blank">
             <FiGithub size={25} color="#000000" />
+          </a>
+          <a href="https://github.com/Thiagomartinsvieira" target="_blank">
+            <SiVercel size={25} color="#000000" />
           </a>
         </div>
       </section>
