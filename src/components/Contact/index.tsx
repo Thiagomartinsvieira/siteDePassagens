@@ -6,13 +6,17 @@ function Contact(): JSX.Element {
     <div>
       <section id="contact" className="contact">
         <h2>Auto viação vieira na midia</h2>
-          
+
         <p>Se voce gostou do projeto e deseja conhecer outros</p>
         <div className="contact-logos">
-          <a href="">
+          <a
+            href="https://www.linkedin.com/in/thiago-martins-vieira-074550192/"
+            target="_blank
+          "
+          >
             <FiLinkedin size={25} color="#0A66C2" />
           </a>
-          <a href="">
+          <a href="https://github.com/Thiagomartinsvieira" target="_blank">
             <FiGithub size={25} color="#000000" />
           </a>
         </div>
