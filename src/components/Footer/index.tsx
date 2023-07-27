@@ -28,7 +28,7 @@ function Footer(): JSX.Element {
             <h3>Formas de Pagamento</h3>
             <ul>
               <img
-                src="src\assets\img\footer\bandeiras.webp"
+                src="..\src\assets\img\footer\bandeiras.webp"
                 alt="formas de pagamento"
               />
             </ul>
@@ -49,11 +49,11 @@ function Footer(): JSX.Element {
         <h3 className="footer-app">BAIXE NOSSO APP</h3>
         <div className="footer-app-img">
           <img
-            src="src\assets\img\footer\play-store.svg"
+            src="..\src\assets\img\footer\play-store.svg"
             alt="Google Play Store"
           />
           <img
-            src="src\assets\img\footer\store-apple.svg"
+            src="..\src\assets\img\footer\store-apple.svg"
             alt="Apple Store Apps"
           />
         </div>
