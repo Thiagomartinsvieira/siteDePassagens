@@ -60,7 +60,7 @@ function Footer(): JSX.Element {
         <hr />
         <br />
         <p className="footer-text">
-          © 2023 - AUTO VIEIRA - Empresa de Transportes fictícia - Desenvolvido
+          2023 - AUTO VIEIRA - Empresa de Transportes fictícia - Desenvolvido
           por Thiago Martins
         </p>
       </footer>
