@@ -1,5 +1,5 @@
 .home {
-  background-image: url('../assets/img/home/capa.webp');
+  background-image: url('src/assets/img/home/capa.webp');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
