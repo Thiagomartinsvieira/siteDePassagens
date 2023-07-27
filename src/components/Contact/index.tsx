@@ -20,7 +20,7 @@ function Contact(): JSX.Element {
           <a href="https://github.com/Thiagomartinsvieira" target="_blank">
             <FiGithub size={25} color="#000000" />
           </a>
-          <a href="https://github.com/Thiagomartinsvieira" target="_blank">
+          <a href="https://portfolio-plum-rho-75.vercel.app/" target="_blank">
             <SiVercel size={25} color="#000000" />
           </a>
         </div>
