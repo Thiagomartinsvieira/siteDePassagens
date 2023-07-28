@@ -4,7 +4,7 @@ import './footer.css';
 function Footer(): JSX.Element {
   return (
     <div>
-      <footer>
+      <footer id="footer">
         <div className="footer-content">
           <div className="footer-section">
             <h3>Institucional</h3>
