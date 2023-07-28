@@ -77,3 +77,14 @@
   }
 }
 
+@media (max-width: 768px) {
+  .header-container {
+    flex-direction: column;
+  }
+  
+  .header-container button {
+    margin-top: -3rem;
+    margin-bottom: 3rem;
+  }
+}
+
