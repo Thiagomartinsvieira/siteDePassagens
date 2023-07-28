@@ -3,7 +3,7 @@ import './benefits.css';
 function Benefits(): JSX.Element {
   return (
     <div>
-      <section className="benefits">
+      <section className="benefits" id="benefits">
         <h2 className="benefits-title">
           Welcome to Auto Viação Vieira - Your Best Option for Travel!
         </h2>
