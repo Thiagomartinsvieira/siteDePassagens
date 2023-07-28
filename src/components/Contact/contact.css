@@ -30,6 +30,9 @@
   color: #000;
 }
 
+.contact-logos a:hover {
+  transform: scale(1.2);
+}
 
 .contact-logos a .linkedin-icon {
   color: #0A66C2;
