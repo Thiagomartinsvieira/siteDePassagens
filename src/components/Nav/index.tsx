@@ -38,7 +38,9 @@ function Nav(): JSX.Element {
     <header className="nav">
       <div className="header-content">
         <div className="title-and-menu">
-          <h1>Auto Vieira</h1>
+          <a href="#home">
+            <h1>Auto Vieira</h1>
+          </a>
           <button
             className={`menu-toggle ${isMenuOpen ? 'open' : ''}`}
             onClick={handleMenuToggle}
