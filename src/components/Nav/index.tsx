@@ -14,8 +14,28 @@ function Nav(): JSX.Element {
     setIsMenuOpen(false);
   };
 
+  const menuOptions = [
+    { label: 'Home', href: '#', onClick: handleMenuLinkClick },
+    {
+      label: 'Destinations',
+      href: '#destinations',
+      onClick: handleMenuLinkClick,
+    },
+    {
+      label: 'About Auto Vieira',
+      href: '#benefits',
+      onClick: handleMenuLinkClick,
+    },
+    { label: 'Contact', href: '#contact', onClick: handleMenuLinkClick },
+    {
+      label: 'Download our APP',
+      href: '#footer',
+      onClick: handleMenuLinkClick,
+    },
+  ];
+
   return (
-    <div className="nav">
+    <header className="nav">
       <div className="header-content">
         <div className="title-and-menu">
           <h1>Auto Vieira</h1>
@@ -24,45 +44,29 @@ function Nav(): JSX.Element {
             onClick={handleMenuToggle}
             type="button"
           >
-            <FaBars />
+            <span aria-label="Menu">
+              <FaBars />
+            </span>
           </button>
         </div>
         <div className="nav-info">
           <span>0800 123 1234</span>
-          <button className="help">Central de ajuda</button>
+          <button className="help">Help Center</button>
         </div>
       </div>
 
       <nav className={`navbar ${isMenuOpen ? 'open' : ''}`}>
         <ul className="menu-list">
-          <li>
-            <a href="#" onClick={handleMenuLinkClick}>
-              Home
-            </a>
-          </li>
-          <li>
-            <a href="#" onClick={handleMenuLinkClick}>
-              Institucional
-            </a>
-          </li>
-          <li>
-            <a href="#" onClick={handleMenuLinkClick}>
-              Agências
-            </a>
-          </li>
-          <li>
-            <a href="#" onClick={handleMenuLinkClick}>
-              Aluguel de ônibus
-            </a>
-          </li>
-          <li>
-            <a href="#" onClick={handleMenuLinkClick}>
-              Contato
-            </a>
-          </li>
+          {menuOptions.map((option, index) => (
+            <li key={index}>
+              <a href={option.href} onClick={option.onClick}>
+                {option.label}
+              </a>
+            </li>
+          ))}
         </ul>
       </nav>
-    </div>
+    </header>
   );
 }
 
