@@ -7,29 +7,29 @@ function Footer(): JSX.Element {
       <footer id="footer">
         <div className="footer-content">
           <div className="footer-section">
-            <h3>Institucional</h3>
+            <h3>About Us</h3>
             <ul>
-              <li>Nossa história</li>
-              <li>História da frota</li>
-              <li>Notícias</li>
+              <li>Our Story</li>
+              <li>Fleet History</li>
+              <li>News</li>
             </ul>
           </div>
 
           <div className="footer-section">
-            <h3>Passagens de Ônibus</h3>
+            <h3>Bus Tickets</h3>
             <ul>
-              <li>Miniaturas</li>
-              <li>Passagens de ônibus</li>
-              <li>Conheça nossa frota</li>
+              <li>Miniatures</li>
+              <li>Bus Tickets</li>
+              <li>Explore Our Fleet</li>
             </ul>
           </div>
 
           <div className="footer-section">
-            <h3>Formas de Pagamento</h3>
+            <h3>Payment Methods</h3>
             <ul>
               <img
                 src="..\src\assets\img\footer\bandeiras.webp"
-                alt="formas de pagamento"
+                alt="payment methods"
               />
             </ul>
           </div>
@@ -46,7 +46,7 @@ function Footer(): JSX.Element {
             <FaYoutube size={30} color="#FF0000" />
           </a>
         </div>
-        <h3 className="footer-app">BAIXE NOSSO APP</h3>
+        <h3 className="footer-app">DOWNLOAD OUR APP</h3>
         <div className="footer-app-img">
           <img
             src="..\src\assets\img\footer\play-store.svg"
@@ -60,8 +60,7 @@ function Footer(): JSX.Element {
         <hr />
         <br />
         <p className="footer-text">
-          2023 - AUTO VIEIRA - Empresa de Transportes fictícia - Desenvolvido
-          por Thiago Martins
+          2023 - AUTO VIEIRA - Fictional Transportation Company - Developed by Thiago Martins
         </p>
       </footer>
     </div>
